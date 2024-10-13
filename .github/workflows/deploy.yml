@@ -1,0 +1,20 @@
+name: deploy
+
+on:
+  # we can also trigger manually in case needed
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    name: Build On X64
+    runs-on: [ "self-hosted", "Linux", "X64", "wade" ]
+    permissions:
+      # Need this to be allowed to publish image to registry
+      # see https://docs.github.com/en/actions/publishing-packages/publishing-docker-images
+      packages: write
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - name: deploy
+        run: |
+          docker compose -f docker-compose.yml up -d
