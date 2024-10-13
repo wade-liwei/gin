@@ -13,7 +13,7 @@ jobs:
 
   buildGo:
     name: buildGo
-    runs-on: self-hosted
+    runs-on: wade
     steps:
     - uses: actions/checkout@v4
 
