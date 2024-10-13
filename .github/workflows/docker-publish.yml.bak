@@ -23,8 +23,8 @@ env:
 
 
 jobs:
-  build:
-
+  buildPublish:
+    name: buildPublish
     runs-on: ubuntu-latest
     permissions:
       contents: read
