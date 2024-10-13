@@ -4,6 +4,6 @@ services:
   nginx:
     restart: always
     container_name: nginx
-    image: nginx
+    image: nginx:1.27.2
     ports:
       - 80:80
