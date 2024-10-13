@@ -1,8 +1,13 @@
 name: deploy
 
 on:
-  # we can also trigger manually in case needed
-  workflow_dispatch:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+# on:
+  # # we can also trigger manually in case needed
+  # workflow_dispatch:
 
 jobs:
   deploy:
