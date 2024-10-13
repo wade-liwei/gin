@@ -8,3 +8,5 @@ restart runner
 
 
 rm go in _work
+
+fix GOBIN dir
