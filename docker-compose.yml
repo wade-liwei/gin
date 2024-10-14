@@ -4,6 +4,12 @@ services:
   nginx:
     restart: always
     container_name: nginx
-    image: nginx:1.27.2
+    image: nginx:1.27.1
     ports:
       - 80:80
+  server:
+    restart: always
+    container_name: server
+    image: server:latest
+    ports:
+      - 3000:3000

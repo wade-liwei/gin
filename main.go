@@ -2,6 +2,7 @@ package main
 
 import (
 	"net/http"
+	"os"
 
 	"github.com/gin-gonic/gin"
 )
@@ -16,6 +17,14 @@ func setupRouter() *gin.Engine {
 	// Ping test
 	r.GET("/ping", func(c *gin.Context) {
 		c.String(http.StatusOK, "pong")
+	})
+
+	r.GET("/env", func(c *gin.Context) {
+
+		environ := os.Environ()
+		c.JSON(http.StatusOK, environ)
+		//c.String(http.StatusOK, "pong")
+
 	})
 
 	// Get user value
