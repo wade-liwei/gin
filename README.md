@@ -12,4 +12,4 @@ rm go in _work
 fix GOBIN dir
 
 
-runner 
+new runner 
