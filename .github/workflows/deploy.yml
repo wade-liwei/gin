@@ -5,9 +5,9 @@ on:
     branches: [ "main" ]
   pull_request:
     branches: [ "main" ]
-# on:
-  # # we can also trigger manually in case needed
-  # workflow_dispatch:
+on:
+  # we can also trigger manually in case needed
+  workflow_dispatch:
 
 jobs:
   deploy:
