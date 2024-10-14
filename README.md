@@ -13,3 +13,6 @@ fix GOBIN dir
 
 
 new runner 
+
+
+test ENV
