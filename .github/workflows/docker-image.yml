@@ -10,7 +10,7 @@ jobs:
 
   buildImage:
     name: buildImage
-    runs-on: [ "wade", "ubuntu-latest"]
+    runs-on: [ "wade"]
     steps:
     - uses: actions/checkout@v4
     - name: Build the Docker image

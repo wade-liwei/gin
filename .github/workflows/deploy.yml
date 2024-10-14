@@ -12,7 +12,7 @@ on:
 jobs:
   deploy:
     name: Build On X64
-    runs-on: [ "self-hosted", "ubuntu-latest"]
+    runs-on: [ "self-hosted"]
     permissions:
       # Need this to be allowed to publish image to registry
       # see https://docs.github.com/en/actions/publishing-packages/publishing-docker-images

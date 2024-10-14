@@ -13,7 +13,7 @@ jobs:
 
   buildGo:
     name: buildGo
-    runs-on: [ "wade", "ubuntu-latest"]
+    runs-on: wade
     steps:
     - uses: actions/checkout@v4
 
