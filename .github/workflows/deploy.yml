@@ -24,6 +24,8 @@ jobs:
       packages: write
       contents: read
     steps:
+      - run: env
+      - run: echo $ENV1
       - uses: actions/checkout@v4
       - name: deploy
         run: |
