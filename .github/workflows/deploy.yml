@@ -17,7 +17,7 @@ jobs:
   deploy:
     needs: buildImage
     name: deploy test
-    runs-on: [ "self-hosted"]
+    runs-on: [ "wade"]
     permissions:
       # Need this to be allowed to publish image to registry
       # see https://docs.github.com/en/actions/publishing-packages/publishing-docker-images
